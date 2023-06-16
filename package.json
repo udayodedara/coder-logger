@@ -13,9 +13,17 @@
   "main": "./extension.js",
   "contributes": {
     "commands": [{
-      "command": "quick-console.helloWorld",
-      "title": "Hello World"
-    }]
+      "command": "quick-console.printConsole",
+      "title": "Quickly Print Console"
+    }],
+    "keybindings": [
+      {
+        "command": "quick-console.printConsole",
+        "key": "ctrl+shift+.",
+        "mac": "ctrl+shift+.",
+        "when": "editorTextFocus"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
