@@ -1,6 +1,7 @@
 {
-  "name": "quick-console",
-  "displayName": "Quick Console",
+  "name": "coder-logger",
+  "displayName": "Coder Logger",
+  "publisher": "udayodedara",
   "description": "",
   "version": "0.0.1",
   "engines": {
