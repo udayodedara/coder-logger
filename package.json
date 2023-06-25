@@ -2,7 +2,7 @@
   "name": "coder-logger",
   "displayName": "Coder Logger",
   "publisher": "udayodedara",
-  "description": "",
+  "description": "light-weight and easy to use extension for instant console log",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.79.0"
@@ -20,8 +20,8 @@
     "keybindings": [
       {
         "command": "quick-console.printConsole",
-        "key": "ctrl+shift+.",
-        "mac": "ctrl+shift+.",
+        "key": "ctrl+shift+space",
+        "mac": "ctrl+shift+space",
         "when": "editorTextFocus"
       }
     ]
