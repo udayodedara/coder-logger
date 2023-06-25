@@ -3,7 +3,7 @@
   "displayName": "Coder Logger",
   "publisher": "udayodedara",
   "description": "light-weight and easy to use extension for instant console log",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.79.0"
   },
@@ -13,10 +13,12 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "quick-console.printConsole",
-      "title": "Quickly Print Console"
-    }],
+    "commands": [
+      {
+        "command": "quick-console.printConsole",
+        "title": "Quickly Print Console"
+      }
+    ],
     "keybindings": [
       {
         "command": "quick-console.printConsole",
