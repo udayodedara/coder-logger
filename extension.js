@@ -59,6 +59,7 @@ function activate(context) {
         editor.edit((editBuilder) => {
           editBuilder.insert(lineEndPosition, "\n" + consoleLogStatement);
         });
+        vscode.commands.executeCommand("editor.action.formatDocument");
       }
     }
   );

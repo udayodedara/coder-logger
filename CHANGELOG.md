@@ -1,5 +1,7 @@
 # Change Log
 
 ### Added
-- Description of extension added
-- change extension activation shortcut key
+- Auto format document after add console
+
+### Fix
+- Formatting issue after adding console

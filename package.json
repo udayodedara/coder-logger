@@ -1,6 +1,7 @@
 {
   "name": "coder-logger",
   "displayName": "Coder Logger",
+  "icon": "logo.png",
   "publisher": "udayodedara",
   "description": "light-weight and easy to use extension for instant console log",
   "version": "0.1.0",
