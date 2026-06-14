@@ -17,17 +17,50 @@
     "commands": [
       {
         "command": "quick-console.printConsole",
-        "title": "Quickly Print Console"
+        "title": "Quickly Print Console",
+        "category": "Coder Logger"
+      },
+      {
+        "command": "coder-logger.openKeybindingSettings",
+        "title": "Change Quick Console Keybinding",
+        "category": "Coder Logger"
       }
     ],
     "keybindings": [
       {
         "command": "quick-console.printConsole",
         "key": "ctrl+shift+space",
-        "mac": "ctrl+shift+space",
+        "mac": "cmd+shift+space",
         "when": "editorTextFocus"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Coder Logger",
+      "properties": {
+        "coderLogger.logPrefix": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "Optional prefix added inside the console.log label. E.g. setting `[DEBUG]` produces `console.log('[DEBUG] myVar', myVar)`."
+        },
+        "coderLogger.quoteStyle": {
+          "type": "string",
+          "enum": ["single", "double", "backtick"],
+          "default": "single",
+          "description": "Quote character used for the console.log label string."
+        },
+        "coderLogger.includeLineNumber": {
+          "type": "boolean",
+          "default": false,
+          "description": "When enabled, the line number where the log is inserted is appended to the label."
+        },
+        "coderLogger.quickConsoleKeybinding": {
+          "type": "string",
+          "default": "ctrl+shift+space",
+          "markdownDescription": "Default keybinding for the **Quick Console** command (`quick-console.printConsole`). Changing this value alone won't update the actual shortcut — click the button below (or run **Coder Logger: Change Quick Console Keybinding**) to open the Keyboard Shortcuts editor and set your preferred key.",
+          "order": 0
+        }
+      }
+    }
   },
   "scripts": {
     "lint": "eslint .",
